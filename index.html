@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Password Strength Background</title>
+  </head>
+  <body class="app">
+    <figure id="bg-image" class="bg-image">
+      <img
+        src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b"
+        alt="Background"
+      />
+    </figure>
+
+    <form id="form" class="form">
+      <h1 class="form-title">Image Password Strength</h1>
+      <p class="form-message">Change the password to see the effect</p>
+
+      <label for="email" class="form-field">
+        <h2 class="form-field-label">Email:</h2>
+        <input
+          name="email"
+          id="email"
+          required
+          placeholder="email@example.com"
+          type="text"
+          class="form-input"
+        />
+      </label>
+
+      <label for="password" class="form-field">
+        <h2 class="form-field-label">Password:</h2>
+        <input
+          name="password"
+          id="password"
+          required
+          placeholder="Enter password"
+          type="password"
+          class="form-input"
+        />
+      </label>
+
+      <button class="form-btn">Submit</button>
+    </form>
+
+    <script src="./script.js">
+    </script>
+  </body>
+</html>

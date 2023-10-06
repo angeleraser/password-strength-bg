@@ -1,0 +1,95 @@
+@import url("./reset.min.css");
+
+:root {
+  --white: #fff;
+  --black: #111;
+  --lightgray: #e2e8f0;
+  --blur-amount: 50px;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  padding: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.bg-image {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  transition: .3s filter;
+  filter: blur(var(--blur-amount));
+}
+
+.bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 30px;
+  background-color: var(--white);
+  border-radius: 4px;
+}
+
+.form-title {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.form-message {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.form-field,
+.form-input {
+  width: 100%;
+}
+
+.form-field-label {
+  margin-bottom: 6px;
+}
+
+.form-input:first-of-type {
+  margin-top: 8px;
+}
+
+.form-input {
+  color: var(--black);
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 12px;
+  border: none;
+  outline: 1px solid var(--lightgray);
+  margin-bottom: 16px;
+}
+
+.form-input:focus {
+  outline-width: 2px;
+  outline-color: var(--black);
+}
+
+.form-btn {
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  margin-top: 16px;
+}
